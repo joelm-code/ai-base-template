@@ -1,0 +1,107 @@
+---
+description: "Code quality standards and best practices for error handling, performance, security, and accessibility"
+globs: ["**/*.tsx", "**/*.ts", "**/*.js", "**/*.jsx", "**/*.css", "**/*.scss"]
+alwaysApply: true
+auto_attach:
+  - description: "Code quality standards for Singularity App development"
+    glob: "**/*.{tsx,jsx,ts,js,css,scss}"
+---
+# Singularity App Code Quality Standards
+
+## Clean Code Principles
+
+1. **Clarity Over Cleverness**:
+   - Write code that is easy to understand
+   - Avoid complex one-liners when simpler multi-line code is clearer
+   - Use descriptive variable and function names
+   - Comment complex algorithms or business logic
+
+2. **Function Design**:
+   - Keep functions small and focused on a single responsibility
+   - Limit function arguments (3 or fewer when possible)
+   - Return early to avoid deep nesting
+   - Extract complex logic into helper functions
+
+3. **Variable Naming**:
+   - Use descriptive, intention-revealing names
+   - Follow camelCase for variables and functions
+   - Follow PascalCase for components, interfaces, and types
+   - Use plural names for arrays and collections
+
+4. **Code Organization**:
+   - Group related code together
+   - Maintain a consistent file structure
+   - Separate concerns appropriately
+   - Follow the principle of least surprise
+
+## Error Prevention & Handling
+
+1. **Defensive Coding**:
+   - Validate inputs at boundaries
+   - Check for null/undefined values
+   - Handle edge cases explicitly
+   - Use TypeScript to prevent type errors
+
+2. **Error Management**:
+   - Use try/catch blocks for error-prone operations
+   - Create meaningful error messages
+   - Log errors with appropriate context
+   - Handle errors at the appropriate level
+
+## Performance Considerations
+
+1. **Resource Efficiency**:
+   - Avoid unnecessary re-renders
+   - Optimize expensive calculations
+   - Implement proper memoization
+   - Be mindful of bundle size
+
+2. **Memory Management**:
+   - Avoid memory leaks (cleanup effect dependencies)
+   - Minimize state duplication
+   - Use appropriate data structures
+   - Clean up event listeners and subscriptions
+
+## Security Practices
+
+1. **Data Safety**:
+   - Sanitize user inputs
+   - Protect against XSS attacks
+   - Never expose sensitive information in client code
+   - Use proper authentication checks
+
+2. **API Security**:
+   - Implement proper error handling for API calls
+   - Validate API responses
+   - Handle expired tokens and sessions
+   - Use HTTPS for all external communications
+
+## Maintainability Guidelines
+
+1. **Code Simplicity**:
+   - Avoid premature optimization
+   - Eliminate dead or commented-out code
+   - Refactor duplicated code into reusable functions
+   - Keep nesting to a minimum (maximum 3 levels)
+
+2. **Self-Documenting Code**:
+   - Write code that explains itself
+   - Use intention-revealing function and variable names
+   - Structure code to follow logical flow
+   - Document "why" not just "what" when appropriate
+
+## Accessibility Standards
+
+1. **Core Requirements**:
+   - Ensure keyboard navigability
+   - Provide appropriate alt text for images
+   - Maintain semantic HTML structure
+   - Support screen readers
+
+2. **Enhanced Features**:
+   - Support high contrast mode
+   - Implement proper focus management
+   - Ensure appropriate color contrast
+   - Test with accessibility tools
+
+By following these standards, we maintain a high-quality, maintainable codebase for the Singularity App.

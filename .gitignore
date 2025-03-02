@@ -24,9 +24,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Cursor IDE files
-.cursor
-
 # Node.js dependencies
 node_modules/
 npm-debug.log
